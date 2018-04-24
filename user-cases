@@ -1,0 +1,47 @@
+Användaren öppnar programmet
+	Användaren presenteras med ett tomt ark med namnet "Untitled-1".
+
+Användaren öppnar nytt ark
+	Användaren väljer menyn "File" och alternativet "New". Ett nytt, tomt, ark öppnas och fokus flyttas till det nya arket. 
+
+Användaren fyller i data i en cell
+	Användaren väjer vilken cell som skall användas genom att markera den i tabellen. Cellen gulmarkeras och användaren får möjlighet
+	att skriva i editor-fältet. När användaren skrivit in uttrycket och trycker på enter sparas värdet i editor fältet och dess
+	resultat visas i cellen.
+
+Användaren tömmer en cell
+	Användaren väljer en cell som ovan och väljer sedan menyn "[????]" och alternativet "Clear". Cellen töms utan vidare konfirmation.
+
+Användaren tömmer alla celler
+	Användaren väljer menyn "[????]" och alternativet "Clear all", en konfirmationsruta öppnas som varnar användaren att den kommer 
+	radera all info i arket. Vid jakande raderas all data i arket.
+
+Användaren byter vy till ett annat ark
+	Användaren väljer menyn "[????]" och väljer sedan det alternativ som motsvarar arket de önskar skall visas. Fokus flyttas sedan
+	till det önskade arket.
+
+Användaren stänger ett ark
+	Användaren väljer menyn "File" och alternativet "Close" så stängs arket utan vidare konfirmation. Inskriven data går förlorad.
+
+Användaren stänger programmet
+	Användaren väljer antingen att stänga det sista kvarvarande arket enligt fallet ovan, eller så klickar användaren på att stänga 
+	programmets fönster. I sistnämnda fallet visas en konfirmationsruta som meddelar att samtliga ark nu stängs och osparad data går
+	förlorad.
+
+Användaren laddar ett tidigare sparat ark
+	Användaren väljer menyn "[????]" och alternativet "????". Användaren kommer då få möjligheten att välja en fil att ladda in via 
+	operativsystemets filhanteringssystem. Väljs en fil avsedd för programmet och utan fel så kommer det öppna arket fyllas med
+	data från den inladdade filen, tidigare inskriven data går förlorad. Är den valda filen antingen inte avsedd för programmet eller
+	innehållande fel så kommer inladdningen misslyckas och ett felmeddelande skrivas ut i konsol.
+
+Användaren sparar aktivt ark
+	Användaren väljer menyn "file" och alternativet "save". Användaren får sedan via operativsystemets filhantering välja ett namn på
+	filen. Filen sparas.
+
+Användaren ändrar data i tidigare fylld cell
+	Användaren markerar en cell med tidigare inskriven data. Den inskrivna datan visas då i editor-fältet.
+	Användaren kan då ändra denna data och spara ändringarna med enter.
+
+Användaren skriver ut arket
+	Användaren väljer menyn "file" och alternativet "print". Användaren får då möjlighet att skriva ut arket utifrån sitt 
+	operativsystem och hårdvara.
