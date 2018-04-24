@@ -1,0 +1,21 @@
+Första möte: 24/4-18
+
+Möte med Emelie tisdag 8 maj.
+Användarfall, paketindelning, klassdiagram
+
+Frågor:
+
+En Cell-klass representerar ett fält i xl-bladet.
+En containerklass som håller cell-klasser, ärver någon map?
+
+En factory klass som skapar cellobjekt
+	Cellobjekt uppdateras genom att raderas och nya skapas.
+
+Ev en editor-klass?
+
+Cell-klassen innehåller en boolean för kommentarer
+
+Current slot är en variabel i containerklassen (arkklassen)
+
+Fel kan fångas i skapandet av ett cellobjekt, dvs i factory klassen
+	Exempel på fel är felaktiga referenser, syntax eller aritmetiska fel (såsom overflows, division med noll mm)
