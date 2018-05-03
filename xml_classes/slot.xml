@@ -1,0 +1,43 @@
+<diagram program="umletino" version="14.2"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>200</x><y>539</y><w>210</w><h>190</h></coordinates><panel_attributes>Package::model
+XLPrintStream
+--
+
+--
++ XLPrintStream(String)
++ save(Set&lt;Entry&lt;String, Slot&gt;&gt;): void
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>510</x><y>539</y><w>210</w><h>190</h></coordinates><panel_attributes>Package::model
+XLBufferedReader
+--
+
+--
++ XLBufferedReader(String)
++ load(Map&lt;String, Slot&gt;): void 
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>150</x><y>49</y><w>210</w><h>190</h></coordinates><panel_attributes>Package::model
+Slot {abstract}
+--
+- state: String
+- isComment: boolean
+--
++ isComment(): boolean
++ changeState(): void {abstract}
++ state(): String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>510</x><y>49</y><w>210</w><h>190</h></coordinates><panel_attributes>Package::model
+SlotFactory
+--
+
+--
++ getSlot(String): Slot</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>70</x><y>309</y><w>210</w><h>190</h></coordinates><panel_attributes>Package::model
+CommentSlot
+--
+
+--
++ CommentSlot(String)
++ changeState(): void
+ </panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>290</x><y>309</y><w>210</w><h>190</h></coordinates><panel_attributes>Package::model
+ExprSlot
+--
+- expr: Expr
+--
++ ExprSlot(Expr)
++ getExpr(): Expr
++ changeState(): void
+ </panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>250</x><y>229</y><w>170</w><h>100</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;40;150;40;150;80</additional_attributes></element><element><id>Relation</id><coordinates><x>170</x><y>229</y><w>110</w><h>100</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>90;10;90;40;10;40;10;80</additional_attributes></element></diagram>

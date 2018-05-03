@@ -1,0 +1,87 @@
+<diagram program="umletino" version="14.2"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>130</x><y>0</y><w>210</w><h>190</h></coordinates><panel_attributes>Package::gui
+BorderPanel
+--
+
+--
+# BorderPane():</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>880</x><y>620</y><w>210</w><h>190</h></coordinates><panel_attributes>Package::gui
+ColoredLabel
+--
+
+--
++ ColoredLabel(String)
++ ColoredLabel(String, Color)
++ ColoredLabel(String, Color, int)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1110</x><y>900</y><w>210</w><h>190</h></coordinates><panel_attributes>Package::gui
+CurrentLabel
+--
+
+--
++ CurrentLabel()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>30</x><y>570</y><w>210</w><h>190</h></coordinates><panel_attributes>Package::gui
+Editor
+--
+
+--
++ Editor()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>730</x><y>220</y><w>210</w><h>190</h></coordinates><panel_attributes>Package::gui
+GridPanel
+--
+
+--
++ GridPanel(int, int)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>590</x><y>510</y><w>210</w><h>190</h></coordinates><panel_attributes>Package::gui
+RowLabels
+--
+
+--
++ RowLabels()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>260</x><y>240</y><w>210</w><h>190</h></coordinates><panel_attributes>Package::gui
+SheetPanel
+--
+
+--
++ SheetPanel(int, int)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>880</x><y>900</y><w>210</w><h>190</h></coordinates><panel_attributes>Package::gui
+SlotLabel
+--
+
+--
++ SlotLabel()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1140</x><y>520</y><w>210</w><h>190</h></coordinates><panel_attributes>Package::gui
+SlotLabels
+--
+
+--
++ SlotLabels(int, int)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>620</x><y>910</y><w>210</w><h>190</h></coordinates><panel_attributes>Package::gui
+StatusLabel
+--
+
+--
++ StatusLabel()
++ update(Observable, Object): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>0</x><y>240</y><w>210</w><h>190</h></coordinates><panel_attributes>Package::gui
+StatusPanel
+--
+
+--
+# StatusPanel(StatusLabel)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>260</x><y>570</y><w>210</w><h>190</h></coordinates><panel_attributes>Package::gui
+XL
+--
+- int ROWS
+- int COLUMNS
+- XLCounter counter
+- StatusLabel statusLabel
+- XList xList
+--
++ XL(XL)
++ XL(XLList, XLCounter)
++ print(Graphics, PageFormat, int): int
++ rename(String): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>30</x><y>800</y><w>210</w><h>190</h></coordinates><panel_attributes>Package::gui
+XLCounter
+--
+- int counter
+--
++ void increment():void
++ toString(): String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>270</x><y>800</y><w>210</w><h>190</h></coordinates><panel_attributes>Package::gui
+XLList
+--
+- List&lt;XL&gt; list
+--
++ add(XL): void
++ isEmpty(): boolean
++ iterator(): Iterator&lt;XL&gt;
++ last(): XL
++ remove(XL): void
++ setChanged(): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>970</x><y>800</y><w>290</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;270;100</additional_attributes></element><element><id>Relation</id><coordinates><x>970</x><y>800</y><w>30</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;100</additional_attributes></element><element><id>Relation</id><coordinates><x>710</x><y>800</y><w>290</w><h>130</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>270;10;10;110</additional_attributes></element><element><id>Relation</id><coordinates><x>820</x><y>400</y><w>450</w><h>140</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;430;120</additional_attributes></element><element><id>Relation</id><coordinates><x>670</x><y>400</y><w>180</w><h>130</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>160;10;10;110</additional_attributes></element><element><id>Relation</id><coordinates><x>230</x><y>180</y><w>150</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;130;60</additional_attributes></element><element><id>Relation</id><coordinates><x>80</x><y>180</y><w>180</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>160;10;10;60</additional_attributes></element></diagram>

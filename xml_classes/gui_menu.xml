@@ -1,0 +1,80 @@
+<diagram program="umletino" version="14.2"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>60</x><y>10</y><w>210</w><h>190</h></coordinates><panel_attributes>Package::gui.menu
+ClearAllMenuItem
+--
+
+--
++ClearAllMenuItems()
++ actionPerformed(ActionEvent):void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>310</x><y>0</y><w>210</w><h>190</h></coordinates><panel_attributes>Package::gui.menu
+ClearMenuItem
+--
+
+--
++ClearAllMenuItems()
++ actionPerformed(ActionEvent):void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>580</x><y>10</y><w>210</w><h>190</h></coordinates><panel_attributes>Package::gui.menu
+CloseMenuItem
+--
+- XL xl
+- XLList xList
+--
++ CloseMenuItem(XL, XLList)
++ actionPerformed(ActionEvent):void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>30</x><y>280</y><w>210</w><h>190</h></coordinates><panel_attributes>Package::gui.menu
+LoadMenuItem
+--
+
+--
++ LoadMenuItem(XL, StatusLabel)
++ action(String): void
++ action(JFileChooser): int</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>300</x><y>320</y><w>210</w><h>190</h></coordinates><panel_attributes>Package::gui.menu
+NewMenuItem
+--
+
+--
++ NewMenuItem(XL)
++ actionPerformed(ActionEvent): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>570</x><y>270</y><w>210</w><h>190</h></coordinates><panel_attributes>Package::gui.menu
+OpenMenuItem {abstract}
+--
+- StatusLabel
+- XL
+--
++ NewMenuItem(XL, StatusLabel, String)
++ actionPerformed(ActionEvent): void
++ openDialog(JFileChooser): int {abstract}</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>30</x><y>560</y><w>210</w><h>190</h></coordinates><panel_attributes>Package::gui.menu
+PrintMenuItem
+--
+- StatusLabel
+- XL
+--
++ PrintMenuItem(XL, StatusLabel)
++ actionPerformed(ActionEvent): void
++ actionPerformed1(ActionEvent): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>270</x><y>540</y><w>210</w><h>190</h></coordinates><panel_attributes>Package::gui.menu
+SaveMenuItem
+--
+- StatusLabel
+- XL
+--
++ SaveMenuItem(XL, StatusLabel)
++ openDialog(JFileChooser): int
+# action(String: Void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>580</x><y>540</y><w>210</w><h>190</h></coordinates><panel_attributes>Package::gui.menu
+WindowMenu
+--
+- XLList xlList
+--
++ WindowMenu(XLList)
++ update(Observable, Object): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>40</x><y>830</y><w>210</w><h>190</h></coordinates><panel_attributes>Package::gui.menu
+WindowMenu
+--
+- XLList xlList
+--
++ WindowMenu(XLList)
++ update(Observable, Object): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>330</x><y>830</y><w>210</w><h>190</h></coordinates><panel_attributes>Package::gui.menu
+WindowMenuItem
+--
+- XL xl
+--
++ WindowMenuItem(XL)
++ actionPerformed(ActionEvent): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>580</x><y>810</y><w>210</w><h>190</h></coordinates><panel_attributes>Package::gui.menu
+XLMenuBar
+--
+
+--
++ XLMenuBar(XL, XLList, StatusLabel)</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>130</x><y>270</y><w>460</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>440;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>470</x><y>450</y><w>220</w><h>130</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>200;10;10;110</additional_attributes></element></diagram>

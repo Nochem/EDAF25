@@ -1,0 +1,36 @@
+<diagram program="umletino" version="14.2"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>210</x><y>80</y><w>210</w><h>230</h></coordinates><panel_attributes>Package::util
+Adjustment
+--
+- int width
+--
++ Adjustment(in)
++ center(String): String
++ left(String): String
++ right(boolean): String
++ right(char): String
++ right(double): String
++ right(float): String
++ right(int): String
++ right(long): String
++ right(Object): String
++ right(String): String
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>520</x><y>80</y><w>210</w><h>190</h></coordinates><panel_attributes>Package::util
+NumberAdjustment
+--
+- double log10
+- int decimals
+- int exponent
+--
++ NumberAdjustment(int, int)
++ NumberAdjustment(int, int, int)
+- fillZero(int): StringBuilder
+- format(double): StringBuilder
++ right(double): String
++ right(float): String
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>340</x><y>450</y><w>210</w><h>190</h></coordinates><panel_attributes>Package::util
+XLException
+--
+
+--
++ XLException(String)
+</panel_attributes><additional_attributes></additional_attributes></element></diagram>
