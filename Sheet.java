@@ -1,15 +1,21 @@
 package model;
 
-public class Sheet implements Enviroment {
+import java.util.TreeMap;
 
-private TreeMap map;
-private String lastCreatedSlot;
+public class Sheet implements expr.Environment {
 
-public void Sheet() {}
+	private TreeMap map;
+	private String lastCreatedSlot;
 
-public boolean insertSlot(String str) {}
+	public void Sheet() {
+	}
 
-public double value(String str) {}
+	public boolean insertSlot(String str) {
+		return false;
+	}
 
+	public double value(String str) {
+		return 0;
+	}
 
 }
