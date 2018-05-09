@@ -4,12 +4,13 @@ import java.util.TreeMap;
 
 public class Sheet implements expr.Environment {
 
-	private TreeMap map;
+	private TreeMap<String, Slot> map;
 	private String lastCreatedSlot=null;
+	private SlotFactory factory;
 
-	public void Sheet() {
-		TreeMap map = new TreeMap<String, Slot>();
-		SlotFactory factory = new SlotFactory();
+	public Sheet() {
+		map = new TreeMap<String, Slot>();
+		factory = new SlotFactory();
 	}
 
 	public boolean insertSlot(String str) {
