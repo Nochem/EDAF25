@@ -1,8 +1,0 @@
-package model;
-
-public abstract class Slot {
-	
-	public abstract double getValue(Sheet sheet) throws SlotTypeException;
-	public abstract String getComment();
-	
-}

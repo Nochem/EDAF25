@@ -1,5 +1,0 @@
-package expr;
-
-public interface Environment  throws SlotTypeException{
-    public double value(String name);
-}
