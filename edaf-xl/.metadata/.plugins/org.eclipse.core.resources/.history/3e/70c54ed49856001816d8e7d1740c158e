@@ -1,0 +1,23 @@
+package gui;
+
+import java.awt.Color;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.MouseEvent;
+
+import gui.MouseListenerLabel.ClickListener;
+
+public class SlotLabel extends ColoredLabel {
+	
+    public SlotLabel() {
+        super("                    ", Color.WHITE, RIGHT);
+        addMouseListener(new ClickListener());
+    }
+    
+    private class ClickListener extends MouseAdapter {
+		public void mouseClicked(MouseEvent event) {
+			setBackground(Color.PINK);
+		}
+	}
+    
+}

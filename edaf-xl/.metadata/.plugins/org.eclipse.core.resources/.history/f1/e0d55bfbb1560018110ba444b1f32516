@@ -1,0 +1,17 @@
+package model;
+
+public class CircularSlot implements Slot {
+
+	@Override
+	public double getValue(Sheet sheet) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public String getComment() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

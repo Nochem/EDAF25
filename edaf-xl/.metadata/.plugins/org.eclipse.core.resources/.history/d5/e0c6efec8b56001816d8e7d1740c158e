@@ -1,0 +1,20 @@
+package model;
+
+import expr.Expr;
+
+public class SlotFactory {
+	Slot slot;
+
+	public Slot newSlot(String str) {
+		if (str.substring(0, 1)=="#") {
+			return slot=new CommentSlot(str);
+		}
+
+	}
+
+	public Slot newSlot(Expr expr) {
+		return slot=new ExprSlot(expr);
+	}
+
+
+}

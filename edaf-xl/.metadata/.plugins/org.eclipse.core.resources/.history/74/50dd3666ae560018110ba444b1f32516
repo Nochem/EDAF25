@@ -1,0 +1,53 @@
+package gui;
+
+import java.awt.Color;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
+import java.util.Map;
+import java.util.Observable;
+import java.util.Observer;
+
+import model.Sheet;
+
+public class SlotLabel extends ColoredLabel implements Observer {
+	
+	private String address;
+	private CurrentSlot currentSlot;
+	private Sheet sheet;
+	
+	
+	private class ClickListener extends MouseAdapter {
+		
+		
+		public void mouseClicked(MouseEvent event) {
+			currentSlot.updateAddress(address);
+			setBackground(Color.yellow);
+		}
+	}
+	
+    public SlotLabel(String address, CurrentSlot currentSlot, Sheet sheet) {
+        super("                    ", Color.WHITE, RIGHT);
+        addMouseListener(new ClickListener());
+        this.address = address;
+        this.currentSlot = currentSlot;
+        this.sheet = sheet;
+        currentSlot.addObserver(this);
+        sheet.addObserver(this);
+    }
+
+	@Override
+	public void update(Observable o, Object object) {
+		if (o instanceof CurrentSlot) {
+			this.setBackground(Color.white);
+		} else {
+			if((Map) object.contains())
+		}	
+	}
+	
+	public String getAddress() {
+		return address;
+	}
+    
+}

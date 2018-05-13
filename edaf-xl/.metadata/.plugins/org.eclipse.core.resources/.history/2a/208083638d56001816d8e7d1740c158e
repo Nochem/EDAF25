@@ -1,0 +1,12 @@
+package model;
+
+public class SlotFactory {
+
+	public Slot newSlot(String str) {
+		if (str.substring(0, 1)=="#") {
+			return new CommentSlot(str);
+		}
+		return new ExprSlot(str);
+	}
+	
+}

@@ -1,0 +1,8 @@
+package model;
+
+public interface class Slot {
+	
+	public double getValue(Sheet sheet) ;
+	public String getComment();
+	
+}

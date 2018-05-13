@@ -1,0 +1,15 @@
+package model;
+
+public class CircularSlotException {
+	package model;
+		
+		private String comment;
+		
+		public SlotTypeException(String comment) {
+			this.comment=comment;
+		}
+		
+		public String getMessage() {
+			return comment;
+		}
+	}

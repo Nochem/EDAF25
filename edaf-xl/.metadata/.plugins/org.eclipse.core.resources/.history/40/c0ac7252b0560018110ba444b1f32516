@@ -1,0 +1,8 @@
+package model;
+
+public abstract class Slot {
+	
+	public abstract double getValue(Sheet sheet);
+	public abstract String getComment();
+	
+}

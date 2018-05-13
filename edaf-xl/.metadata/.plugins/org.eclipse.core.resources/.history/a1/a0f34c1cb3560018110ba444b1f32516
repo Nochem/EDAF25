@@ -1,0 +1,21 @@
+package model;
+
+public class CircularSlot implements Slot {
+	
+	private Expr expr;
+	
+	public CircularSlot(String expr) {
+		this.expr = expr;
+	}
+
+	@Override
+	public double getValue(Sheet sheet) {
+		throw new CircularSlotException("BLA");
+	}
+
+	@Override
+	public String getComment() {
+		throw new CircularSlotException("BLA");
+	}
+
+}

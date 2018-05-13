@@ -1,0 +1,21 @@
+package gui;
+
+import java.awt.Color;
+
+public class CurrentLabel extends ColoredLabel {
+	
+	private String address;
+	
+    public CurrentLabel() {
+        super("A1", Color.WHITE);
+    }
+    
+    public void deselectLabel() {
+    	this.setBackground(Color.WHITE);
+    }
+    
+    public void selectLabel(String address) {
+    	
+    }
+    
+}

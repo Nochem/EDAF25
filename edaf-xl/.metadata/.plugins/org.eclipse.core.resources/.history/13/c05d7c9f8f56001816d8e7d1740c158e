@@ -1,0 +1,26 @@
+package model;
+
+import java.io.IOException;
+
+import expr.Expr;
+import expr.ExprParser;
+
+public class ExprSlot extends Slot {
+	
+	Expr expr;
+	ExprParser parser;
+	
+	public ExprSlot(String expr) throws IOException {
+		parser = new ExprParser();
+		this.expr = parser.build(expr);
+	}
+	
+	public double getValue(Sheet sheet) {
+		return sheet.value(parser)
+	}
+	
+	public String getComment() throws SlotTypeException {
+		throw new SlotTypeException("Not a commentSlot");
+	}
+
+}
