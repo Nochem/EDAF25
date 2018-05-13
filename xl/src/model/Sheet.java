@@ -20,7 +20,11 @@ public class Sheet extends Observable implements expr.Environment  {
 	}
 
 	public void setSlot(String slotAddress, String enteredExpr) throws IOException {
-		map.put(slotAddress, factory.newSlot(enteredExpr));
+		if(enteredExpr.equals("")) {
+			map.remove(slotAddress);
+		} else {
+			map.put(slotAddress, factory.newSlot(enteredExpr));	
+		}
 		lastCreatedSlot = slotAddress;
 		updateObservers();
 	}

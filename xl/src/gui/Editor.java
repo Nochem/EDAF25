@@ -30,6 +30,7 @@ public class Editor extends JTextField implements ActionListener, Observer {
 	public void actionPerformed(ActionEvent e) {
 		try {
 			sheet.setSlot(currentAddress, this.getText());
+			
 		} catch (IOException e1) {
 			// TODO Auto-generated catch block
 			e1.printStackTrace();

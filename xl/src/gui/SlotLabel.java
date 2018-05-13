@@ -53,6 +53,8 @@ public class SlotLabel extends ColoredLabel implements Observer {
 				} else {
 					this.setText(slot.getComment().substring(1, slot.getComment().length()));
 				}
+			} else {
+				this.setText("");
 			}
 		}	
 	}
